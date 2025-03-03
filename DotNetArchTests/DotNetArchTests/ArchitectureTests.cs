@@ -15,6 +15,9 @@ namespace DotNetArchTests
             Test_ModelPropertyNamingConvention();
         }
 
+        /// <summary>
+        /// Test the Model property if they follow the proper Naming convetion
+        /// </summary>
         private static void Test_ModelPropertyNamingConvention()
         {
             Console.WriteLine("Running Product Model Naming Convention Test...");
@@ -36,11 +39,19 @@ namespace DotNetArchTests
             }
         }
 
+        /// <summary>
+        /// Check the Pascal Case
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         private static bool IsPascalCase(string name)
         {
             return char.IsUpper(name[0]) && !name.Contains("_");
         }
 
+        /// <summary>
+        /// Test the Repository NameSpace if they follow the Naming Convention
+        /// </summary>
         private static void Test_RepositoryNamingConvention()
         {
             var result = Types.InCurrentDomain()
@@ -64,6 +75,9 @@ namespace DotNetArchTests
             }
         }
 
+        /// <summary>
+        /// Test the Service NameSpace if they follow the Naming Convention
+        /// </summary>
         private static void Test_ServiceNaminConvention()
         {
             var result = Types.InCurrentDomain()

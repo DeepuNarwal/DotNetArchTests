@@ -7,7 +7,7 @@ namespace DotNetArchTests
     {
         static void Main()
         {
-            Console.WriteLine("Starting Console Application...");
+            Console.WriteLine("Starting Console Application");
             ArchitectureTests.RunTests();
         }
     }
